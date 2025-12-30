@@ -1,24 +1,24 @@
-body{
+body {
   font-family: 'Open Sans', sans-serif !important;
   background: #0c0b09 !important;
   color: #ffffff;
 }
 
-a{
+a {
   color: #FCE388;
   text-decoration: none !important;
 }
 
-a:hover{
+a:hover {
   color: #dc9439;
   text-decoration: none !important;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 

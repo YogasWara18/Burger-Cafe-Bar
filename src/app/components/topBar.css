@@ -1,11 +1,11 @@
-#topbar{
+#topbar {
     height: 40px;
     font-size: 14px;
     transition: all 0.5s;
     z-index: 996;
 }
 
-#topbar .topbar-scrolled{
+#topbar .topbar-scrolled {
     top: -40px;
 }
 
@@ -14,7 +14,7 @@
     color: #FCE388;
 }
 
-#topbar .contact-info i span{
+#topbar .contact-info i span {
     padding-left: 5px;
     color: #fff;
 }
@@ -28,15 +28,15 @@
     color:  #FCE388;
 }
 
-#topbar .languages ul a{
+#topbar .languages ul a {
     color: white;
 }
 
-#topbar .languages ul li + li{
+#topbar .languages ul li + li {
     padding-left: 10px;
 }
 
-#topbar .languages ul li + li::before{
+#topbar .languages ul li + li::before {
     display: inline-block;
     padding-right: 10px;
     color: rgba(255, 255, 255, 0.5);

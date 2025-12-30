@@ -28,13 +28,13 @@ export default function Header() {
       className={`fixed-top d-flex align-items-center ${scroll > 100 ? 'header-scrolled' : undefined }`}
     >
       <div className="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="logo me-auto me-lg-0">
             <Image
               src="/navbar-logo.png"
               alt="Burger Cafe & Bar Logo"
               width={170}
               height={40}
-              className="object-contain"
+              className="img-fluid"
             />
           </Link>
       </div>

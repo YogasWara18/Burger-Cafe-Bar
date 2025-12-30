@@ -1,10 +1,43 @@
-import React from 'react'
-import './header.css'
+'use client'
+
+import React, {useState, useEffect} from 'react';
+import './header.css';
+
+// logo
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
+  const [scroll, setScroll] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setScroll(window.scrollY);
+    });
+    return () => {
+      window.removeEventListener('scroll', () => {
+        setScroll(window.scrollY);
+      });
+    };
+  }, [scroll]);
+
+
   return (
-    <div>
-      header
-    </div>
+    <header
+      id="header"
+      className={`fixed-top d-flex align-items-center ${scroll > 100 ? 'header-scrolled' : undefined }`}
+    >
+      <div className="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+        <Link href="/" className="flex items-center">
+            <Image
+              src="/navbar-logo.png"
+              alt="Burger Cafe & Bar Logo"
+              width={170}
+              height={40}
+              className="object-contain"
+            />
+          </Link>
+      </div>
+    </header>
   )
 }

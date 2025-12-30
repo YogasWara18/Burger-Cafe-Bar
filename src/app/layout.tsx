@@ -7,9 +7,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 // import glightbox
 import 'glightbox/dist/css/glightbox.min.css';
 
+import Script from 'next/script';
+
 import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
+
+import TopBar from './components/TopBar';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -31,7 +35,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={playfair.className}>{children}</body>
+      <body className={playfair.className}>
+        <TopBar/>
+        {children}
+        </body>
+      <Script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossOrigin="anonymous"
+      ></Script>
+      
     </html>
   );
 }

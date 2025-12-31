@@ -5,12 +5,12 @@ body {
 }
 
 a {
-  color:#FCE388;
+  color: #de963a;
   text-decoration: none !important;
 }
 
 a:hover {
-  color: #dc9439;
+  color: #edc586;
   text-decoration: none !important;
 }
 

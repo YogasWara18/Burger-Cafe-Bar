@@ -6,6 +6,7 @@ import './header.css';
 // logo
 import Link from 'next/link';
 import Image from 'next/image';
+import AppBtn from './AppBtn';
 
 export default function Header() {
   const [scroll, setScroll] = useState(0);
@@ -37,6 +38,8 @@ export default function Header() {
               className="img-fluid"
             />
           </Link>
+
+          <AppBtn name="Order Now"/>
       </div>
     </header>
   )

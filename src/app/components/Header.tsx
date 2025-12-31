@@ -7,6 +7,7 @@ import './header.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import AppBtn from './AppBtn';
+import Nav from './Nav';
 
 export default function Header() {
   const [scroll, setScroll] = useState(0);
@@ -39,6 +40,7 @@ export default function Header() {
             />
           </Link>
 
+          <Nav/>
           <AppBtn name="Order Now"/>
       </div>
     </header>

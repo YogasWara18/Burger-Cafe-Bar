@@ -6,6 +6,26 @@ export default function Nav() {
 
     const [navList, setNavlist] = useState(navs);
     const [open, setOpen] = useState(false);
+    const [scroll, setScroll] = useState(0);
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            setScroll(window.scrollY);
+        });
+        return () => {
+            window.removeEventListener('scroll', () => {
+                setScroll(window.scrollY);
+            });
+        }
+    }, [scroll])
+
+    const handleToggleMenu = () => {
+        setOpen(!open);
+    };
+
+    const handleScrollTo = (section: string) => {};
+
+    const handleNavActive = () => {};
 
   return (
     <nav

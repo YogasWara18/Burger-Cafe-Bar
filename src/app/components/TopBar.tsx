@@ -38,7 +38,7 @@ export default function TopBar() {
           <ul>
             <li>EN</li>
             <li>
-              <a href="#">JP</a>
+              <a href="#">IDN</a>
             </li>
           </ul>
         </div>

@@ -9,7 +9,7 @@
     top: -40px;
 }
 
-#topbar .contact-info i{
+#topbar .contact-info i {
     font-style: normal;
     color: #de963a;
 }
@@ -19,7 +19,7 @@
     color: #fff;
 }
 
-#topbar .languages ul{
+#topbar .languages ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;

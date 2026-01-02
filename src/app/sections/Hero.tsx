@@ -39,8 +39,7 @@ export default function Hero() {
             <a
               href="https://www.youtube.com/watch?v=HS24PywYlxg"
               className="glightbox play-btn"
-            >
-            </a>
+            ></a>
           </div>
         </div>
       </div>

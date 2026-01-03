@@ -31,7 +31,7 @@ export default function Menu() {
   return (
     <section id="menu" className='menu section-bg'>
       <div className="container" data-aos="fade-up">
-        <SectionTitle title="Menu" subtitle="Check Our Tasty Menu"/>
+        <SectionTitle title="Menu" subtitle="Taste the Flavor Sip the Vibes"/>
 
         <div className="row" data-aos="fade-up" data-aos-delay="100">
           <div className="col-lg-12 d-flex justify-content-center">

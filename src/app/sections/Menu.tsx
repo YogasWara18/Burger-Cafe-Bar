@@ -26,7 +26,15 @@ export default function Menu() {
     setItems(data);
   }, [data]);
 
-  const handleFilterChange = (id: number, category: string) => {};
+  const handleFilterChange = (id: number, category: string) => {
+    if (category === 'all') {
+      setItems(data);
+    } else {
+      setItems(
+        data.filter((item: { category: string }) => item.category === category)
+      );
+    }
+  };
 
   return (
     <section id="menu" className='menu section-bg'>

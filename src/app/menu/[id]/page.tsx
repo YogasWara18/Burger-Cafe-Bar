@@ -1,6 +1,7 @@
 import Breadcrumb from "@/app/components/Breadcrumb";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 async function getFoodData(id: string) {
   const res = await fetch(`http://localhost:3000/api/menu/${id}`);
@@ -24,7 +25,7 @@ export default async function MenuSingle({
   }
 
   return (
-    <main id="main">
+    <main id="main" style={{ paddingTop: "23px" }}>
       <Breadcrumb page="Menu" />
 
       <section className="inner-page">
@@ -56,6 +57,12 @@ export default async function MenuSingle({
                   </ul>
                 </div>
               )}
+              <div className="mt-4">
+                <Link href={`/order/${id}`} className="app-btn ">
+                  Order Now
+                </Link>
+              </div>
+
             </div>
           </div>
         </div>

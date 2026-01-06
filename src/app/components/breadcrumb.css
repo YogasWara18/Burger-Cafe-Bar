@@ -1,0 +1,48 @@
+.breadcrumbs {
+    padding: 15px 0;
+    background: #1d1b16;
+    margin-top: 110px;
+}
+
+@media (max-width: 992px) {
+    .breadcrumbs {
+        margin-top: 98px;
+    }
+}
+
+.breadcrumbs h2 {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.breadcrumbs ol li + li {
+    padding-left: 10px;
+}
+
+.breadcrumbs ol li + li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    content: "/";
+}
+
+@media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+        display: block !important;
+    }
+    .breadcrumbs ol {
+        display: block;
+    }
+    .breadcrumbs ol li {
+        display: inline-block;
+    }
+}

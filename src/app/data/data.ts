@@ -57,7 +57,17 @@ export const menu = [
     preview: "/Menu-burger-1.jpg",
     ingredients: "Beef, lettuce, tomato",
     category: "Burgers",
-    description: "Juicy and tasty",
+    description:
+      "A hearty burger with two juicy beef patties, fresh vegetables, and melted cheese.",
+    steps: [
+      "Season ground beef and shape into two patties.",
+      "Grill patties over medium-high heat until cooked through.",
+      "Toast sesame seed buns lightly for crunch.",
+      "Layer lettuce and tomato slices on the bottom bun.",
+      "Place the first patty, top with melted cheddar cheese.",
+      "Add the second patty, again topped with cheese.",
+      "Finish with the bun crown and serve hot.",
+    ],
   },
   {
     id: 2,
@@ -66,7 +76,17 @@ export const menu = [
     preview: "/Menu-burger-2.jpg",
     ingredients: "Beef, cheese, pickles",
     category: "Burgers",
-    description: "Cheesy delight",
+    description:
+      "A crispy breaded chicken patty layered with fresh vegetables and melted cheese in a sesame bun.",
+    steps: [
+      "Season chicken breast with salt, pepper, and spices.",
+      "Coat chicken in seasoned breadcrumbs.",
+      "Deep-fry until golden brown and crispy.",
+      "Lightly toast sesame seed buns.",
+      "Layer lettuce and tomato slices on the bottom bun.",
+      "Place crispy chicken patty and top with melted cheese.",
+      "Finish with the bun crown and serve hot.",
+    ],
   },
   {
     id: 3,
@@ -75,7 +95,17 @@ export const menu = [
     preview: "/Menu-burger-3.jpg",
     ingredients: "Vegetables, lettuce, sauce",
     category: "Burgers",
-    description: "Healthy and fresh",
+    description:
+      "A vibrant plant-based burger stacked with fresh vegetables, beet hummus, and a multigrain sesame bun.",
+    steps: [
+      "Prepare a thick veggie patty from beans, grains, and vegetables, then pan-sear until golden.",
+      "Lightly toast the multigrain sesame bun for aroma and crunch.",
+      "Spread beet hummus on the bottom bun for color and flavor.",
+      "Layer fresh arugula leaves, sliced red onions, and orange bell pepper.",
+      "Add carrot ribbons for sweetness and texture.",
+      "Place the hot veggie patty on top of the vegetables.",
+      "Crown with the top bun and serve with scattered greens or peas for garnish.",
+    ],
   },
   {
     id: 4,
@@ -84,7 +114,16 @@ export const menu = [
     preview: "/Menu-cafe-4.jpg",
     ingredients: "Arabica beans",
     category: "Cafe",
-    description: "Strong and aromatic",
+    description:
+      "A strong and aromatic shot of espresso brewed from finely ground Arabica beans.",
+    steps: [
+      "Select high-quality Arabica coffee beans.",
+      "Grind beans finely to achieve the right texture.",
+      "Pack the ground coffee firmly into the portafilter.",
+      "Brew under high pressure with hot water for 25–30 seconds.",
+      "Serve immediately in a small cup with golden crema on top.",
+      "Optionally garnish with cinnamon sticks or coffee beans for aroma.",
+    ],
   },
   {
     id: 5,
@@ -93,7 +132,16 @@ export const menu = [
     preview: "/Menu-cafe-5.jpg",
     ingredients: "Espresso, milk foam",
     category: "Cafe",
-    description: "Smooth and creamy",
+    description:
+      "A smooth and creamy cappuccino topped with frothy milk foam and a sprinkle of cocoa.",
+    steps: [
+      "Pull a fresh shot of espresso using finely ground coffee beans.",
+      "Steam milk until hot and slightly frothy.",
+      "Pour equal parts espresso and steamed milk into a cup.",
+      "Top with a thick layer of milk foam.",
+      "Sprinkle cocoa or cinnamon powder over the foam for garnish.",
+      "Serve with sugar cubes and cinnamon sticks on the side.",
+    ],
   },
   {
     id: 6,
@@ -230,7 +278,7 @@ export const menu = [
     category: "Specials",
     description: "Light and crunchy",
   },
-   {
+  {
     id: 21,
     name: "BBQ Ribs",
     price: 14.0,
@@ -267,11 +315,6 @@ export const menu = [
     category: "Burgers",
     description: "Smoky and savory",
   },
-
-
-
-
-
 ];
 
 export const filters = [
@@ -299,7 +342,7 @@ export const filters = [
     category: "Bar",
     active: false,
   },
-   {
+  {
     id: 5,
     name: "Specials",
     category: "Specials",

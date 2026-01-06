@@ -5,6 +5,8 @@ import Glightbox from "glightbox";
 import "./hero.css";
 import HeroBtn from "../components/HeroBtn";
 
+
+
 export default function Hero() {
   useEffect(() => {
     Glightbox({

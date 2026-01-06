@@ -1,6 +1,7 @@
 import About from "./sections/About";
 import Hero from "./sections/Hero";
 import Menu from "./sections/Menu";
+import Specials from "./sections/Specials";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
     <main id="main">
       <About/>
        <Menu/>
+       <Specials/>
     </main>
    
   </>    

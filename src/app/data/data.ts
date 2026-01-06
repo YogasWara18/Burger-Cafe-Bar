@@ -544,3 +544,79 @@ export const filters = [
     active: false,
   },
 ];
+
+export const specials = [
+  {
+    id: 1,
+    image: "./Menu-specials-1.png",
+    title: "Golden Seared Salmon Symphony",
+    subtitle: "A Harmony of Freshness, Color, and Flavor",
+    content:
+      "This dish showcases a perfectly seared salmon fillet with crisp, golden skin and delicate scoring that enhances both texture and presentation. Surrounding the fish are vibrant accents: juicy cherry tomatoes, charred lime slices, and fragrant sprigs of dill. A smooth yellow cream base ties the elements together, while a drizzle of balsamic reduction adds depth and contrast. The composition balances elegance and flavor, transforming a simple salmon fillet into a refined culinary masterpiece.",
+    active: true,
+  },
+  {
+    id: 2,
+    image: "./Menu-specials-2.png",
+    title: "Seared Salmon with Garden Harmony",
+    subtitle: "A Celebration of Color, Texture, and Taste",
+    content:
+      "This gourmet plate features a beautifully seared salmon fillet with crisp skin, delicately garnished with fresh chives. Surrounding the salmon is a vibrant medley of seasonal vegetables baby carrots, asparagus spears, zucchini slices, and golden potato wedges each adding its own texture and flavor. A smooth yellow cream sauce is artfully spread across the plate, while a refreshing salad topped with green onions provides balance and contrast. Presented on a dark plate, the vivid colors and refined arrangement highlight the artistry of modern culinary design.",
+    active: false,
+  },
+  {
+    id: 3,
+    image: "./Menu-specials-3.png",
+    title: "Rustic Pepperoni & Basil Pizza",
+    subtitle: "A Classic Reinvented with Fresh Vibrance",
+    content:
+      "This freshly baked pizza is sliced into eight generous portions, topped with savory pepperoni, juicy cherry tomatoes, and fragrant basil leaves. Melted cheese and rich tomato sauce create a comforting base, while the surrounding ingredients—whole tomatoes, purple heirloom slices, herbs, and spices emphasize the freshness and authenticity of the dish. Presented against a dark backdrop, the vibrant colors and rustic arrangement highlight both tradition and artistry, making this pizza a feast for the eyes as well as the palate.",
+    active: false,
+  },
+  {
+    id: 4,
+    image: "./Menu-specials-4.png",
+    title: "Herb Infused Steak Medley",
+    subtitle: "A Fusion of Bold Flavors and Elegant Presentation",
+    content:
+      "This refined plate features tender slices of medium rare steak arranged in a graceful fan like display. Complementing the meat are vibrant accompaniments: roasted baby potatoes, cherry tomatoes in red and yellow hues, crisp red onion slices, and fragrant herbs such as rosemary and thyme. Microgreens and dark berries add freshness and a touch of sophistication, while the dark plate backdrop enhances the vivid colors and textures. The composition balances rustic heartiness with modern artistry, creating a dish that delights both the eye and the palate.",
+    active: false,
+  },
+  {
+    id: 5,
+    image: "./Menu-specials-5.png",
+    title: "Double Crispy Chicken Cheeseburger",
+    subtitle: "Layers of Crunch, Melt, and Freshness",
+    content:
+      "This towering burger features two golden, crispy fried chicken patties stacked between a sesame seed bun. Melted cheddar cheese oozes luxuriously over the layers, creating a rich and indulgent appeal. Fresh green leaf lettuce and ripe tomato slices add balance and brightness, while the dramatic melt of the cheese highlights the irresistible, mouthwatering presentation. Bold, vibrant, and unapologetically indulgent, this burger is crafted to satisfy both the eyes and the appetite.",
+    active: false,
+  },
+];
+
+export const specialsFilters = [
+  {
+    id: 1,
+    name: 'Golden Seared Salmon Symphony',
+    active: true,
+  },
+  {
+    id: 2,
+    name: 'Seared Salmon with Garden Harmony',
+    active: false,
+  },
+  {
+    id: 3,
+    name: 'Rustic Pepperoni & Basil Pizza',
+    active: false,
+  },
+  {
+    id: 4,
+    name: 'Herb Infused Steak Medley',
+    active: false,
+  },
+  {
+    id: 5,
+    name: 'Double Crispy Chicken Cheeseburger',
+    active: false,
+  }
+]

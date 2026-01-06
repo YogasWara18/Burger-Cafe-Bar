@@ -1,0 +1,19 @@
+.specials .tab-pane.active {
+    -webkit-animation: fadeIn 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.specials .details h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.specials .details p {
+    color: #aaaaaa;
+}
+
+.specials .details p:last-child {
+    margin-bottom: 0;
+}

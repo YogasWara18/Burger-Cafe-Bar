@@ -157,9 +157,18 @@ export const menu = [
     name: "Mojito",
     price: 7.0,
     preview: "/Menu-bar-7.jpg",
-    ingredients: "Rum, mint, lime",
-    category: "Bar",
-    description: "Refreshing cocktail",
+    ingredients: "Rum, mint leaves, lime, sugar, soda water, ice",
+  category: "Bar",
+  description: "A refreshing cocktail made with rum, mint, lime, and soda water.",
+  steps: [
+    "Place fresh mint leaves and lime wedges into a glass.",
+    "Add sugar and gently muddle to release flavors.",
+    "Fill the glass with crushed ice.",
+    "Pour in white rum and stir well.",
+    "Top with soda water for a fizzy finish.",
+    "Garnish with a lime wheel and a sprig of mint.",
+    "Serve chilled on a coaster for presentation."
+  ]
   },
   {
     id: 8,

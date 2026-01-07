@@ -1,0 +1,38 @@
+.events .event-item {
+    color: #fff;
+}
+
+.events .event-item h3 {
+    font-weight: 600;
+    font-size: 26px;
+    color: #de963a;
+}
+
+.events .event-item .price {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.events .event-item .price span {
+    border-bottom: 2px solid #de963a;
+}
+
+.events .event-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.events .event-item ul li {
+    padding-bottom: 10px;
+}
+
+.events .event-item ul i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: #de963a;
+}
+
+.events .event-item p:last-child {
+    margin-bottom: 0;
+}

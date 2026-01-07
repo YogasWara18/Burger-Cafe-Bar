@@ -693,19 +693,33 @@ export const events = [
     summary: `An unforgettable evening of camaraderie, music, and glowing lights beneath the night sky.`,
   },
   {
-  id: 6,
-  image: "./Event-6.jpg",
-  title: "Birthday Burger Buffet",
-  price: 600,
-  content: `A festive birthday party featuring a burger buffet with colorful toppings and fun vibes.`,
-  details: [
-    "Buffet-style burgers with fresh toppings and sides",
-    "Birthday cake and celebratory decorations",
-    "Fruit punch and wine pairing options",
-    "Games and photo booth with neon props",
-    "Memorable dining experience for friends and family",
-  ],
-  summary: `A lively birthday party where guests enjoy a burger buffet, drinks, and joyful celebration together.`,
-}
+    id: 6,
+    image: "./Event-6.jpg",
+    title: "Birthday Burger Buffet",
+    price: 600,
+    content: `A festive birthday party featuring a burger buffet with colorful toppings and fun vibes.`,
+    details: [
+      "Buffet-style burgers with fresh toppings and sides",
+      "Birthday cake and celebratory decorations",
+      "Fruit punch and wine pairing options",
+      "Games and photo booth with neon props",
+      "Memorable dining experience for friends and family",
+    ],
+    summary: `A lively birthday party where guests enjoy a burger buffet, drinks, and joyful celebration together.`,
+  },
+];
 
+export const bookings = [
+  {
+    id: 1,
+    details: {
+      name: 'Example Name',
+      email: 'Jhon@example.com',
+      phone: '123456789',
+      date: '2026-01-01',
+      time: '11.30',
+      people: 3,
+      message: 'Table booked for 3 guests at 11:30 — get ready for a delicious burger feast!',
+    },
+  },
 ];

@@ -1,0 +1,105 @@
+.book-a-table .booking-form {
+    width: 100%;
+}
+
+.book-a-table .booking-form .form-group {
+    padding-bottom: 8px;
+}
+
+.book-a-table .booking-form .error-message {
+    color: #fff;
+    background: #de963a;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.book-a-table .booking-form .error-message bt + br {
+    margin-top: 25px;
+}
+
+.book-a-table .booking-form .sent-message {
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.book-a-table .booking-form .loading {
+    text-align: center;
+    padding: 15px;
+}
+
+.book-a-table .booking-form .loading:before {
+    content: '';
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #de963a;
+    border-top-color: #1a1814;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+}
+
+.book-a-table .booking-form input, 
+.book-a-table .booking-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    background: #0c0b09;
+    border-color: #625b4b;
+    color: white;
+}
+
+::-webkit-calender-picker-indicator {
+    filter: invert(1);
+}
+
+.book-a-table .booking-form input[type='data'],
+.book-a-table .booking-form input[type='time'] {
+    color: #a49b89;
+}
+
+.book-a-table .booking-form input::-webkit-input-placeholder,
+.book-a-table .booking-form textarea::-webkit-input-placeholder {
+    color: #a49b89;
+}
+
+.book-a-table .booking-form input::-moz-placeholder,
+.book-a-table .booking-form textarea::-moz-placeholder {
+    color: #a49b89;
+}
+
+.book-a-table .booking-form input::placeholder,
+.book-a-table .booking-form textarea::placeholder {
+    color: #a49b89;
+}
+
+.book-a-table .booking-form input:focus,
+.book-a-table .booking-form textarea:focus {
+    border-color: #de963a;
+}
+
+.book-a-table .booking-form input {
+    height: 44px;
+}
+
+.book-a-table .booking-form textarea {
+    padding: 10px 12px;
+}
+
+.book-a-table .booking-form button[type='submit'] {
+    background: #de963a;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.book-a-table .booking-form button[type='submit']:hover {
+    background: #de963a;
+}

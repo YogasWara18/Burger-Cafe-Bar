@@ -719,7 +719,7 @@ export const bookings = [
       date: '2026-01-01',
       time: '11.30',
       people: 3,
-      message: 'Table booked for 3 guests at 11:30 — get ready for a delicious burger feast!',
+      message: 'Table booked for 3 guests at 11:30 get ready for a delicious burger feast!',
     },
   },
 ];

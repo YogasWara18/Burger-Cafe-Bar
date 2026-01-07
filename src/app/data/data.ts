@@ -626,7 +626,7 @@ export const events = [
     id: 1,
     image: "./Event-1.jpg",
     title: "Burgers Party",
-    price: 150,
+    price: 550,
     content: `Classic cheeseburger with beef patty, cheddar cheese, lettuce, tomato, and red onion.`,
     details: [
       "Served on a soft sesame seed bun",
@@ -665,16 +665,19 @@ export const events = [
   {
     id: 4,
     image: "./Event-4.jpg",
-    title: "Double Burger Challenge",
-    price: 350,
-    content: `A playful dining event where guests take on the double burger challenge.`,
+    title: "Birthday Bash Celebration",
+    price: 1000,
+    content: `A joyful birthday party event filled with laughter, music, and delicious treats.`,
     details: [
-      "Extra-large burgers stacked with cheese and fresh toppings",
-      "Friendly competition among guests",
-      "Memorable dining experience with photos and neon vibes",
+      "Colorful decorations with balloons and streamers",
+      "Birthday cake cutting ceremony",
+      "Fun games and activities for guests",
+      "Live music or DJ to set the mood",
+      "Photo booth with party props",
     ],
-    summary: `An exciting burger challenge night that combines food, fun, and a lively restaurant atmosphere.`,
+    summary: `A festive birthday party experience that brings together friends and family with food, fun, and unforgettable memories.`,
   },
+
   {
     id: 5,
     image: "./Event-5.jpg",
@@ -689,4 +692,20 @@ export const events = [
     ],
     summary: `An unforgettable evening of camaraderie, music, and glowing lights beneath the night sky.`,
   },
+  {
+  id: 6,
+  image: "./Event-6.jpg",
+  title: "Birthday Burger Buffet",
+  price: 600,
+  content: `A festive birthday party featuring a burger buffet with colorful toppings and fun vibes.`,
+  details: [
+    "Buffet-style burgers with fresh toppings and sides",
+    "Birthday cake and celebratory decorations",
+    "Fruit punch and wine pairing options",
+    "Games and photo booth with neon props",
+    "Memorable dining experience for friends and family",
+  ],
+  summary: `A lively birthday party where guests enjoy a burger buffet, drinks, and joyful celebration together.`,
+}
+
 ];

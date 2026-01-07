@@ -596,27 +596,97 @@ export const specials = [
 export const specialsFilters = [
   {
     id: 1,
-    name: 'Golden Seared Salmon Symphony',
+    name: "Golden Seared Salmon Symphony",
     active: true,
   },
   {
     id: 2,
-    name: 'Seared Salmon with Garden Harmony',
+    name: "Seared Salmon with Garden Harmony",
     active: false,
   },
   {
     id: 3,
-    name: 'Rustic Pepperoni & Basil Pizza',
+    name: "Rustic Pepperoni & Basil Pizza",
     active: false,
   },
   {
     id: 4,
-    name: 'Herb Infused Steak Medley',
+    name: "Herb Infused Steak Medley",
     active: false,
   },
   {
     id: 5,
-    name: 'Double Crispy Chicken Cheeseburger',
+    name: "Double Crispy Chicken Cheeseburger",
     active: false,
-  }
-]
+  },
+];
+
+export const events = [
+  {
+    id: 1,
+    image: "./Event-1.jpg",
+    title: "Burgers Party",
+    price: 150,
+    content: `Classic cheeseburger with beef patty, cheddar cheese, lettuce, tomato, and red onion.`,
+    details: [
+      "Served on a soft sesame seed bun",
+      "Fresh toppings: cucumber, cherry tomatoes, chives, sweet corn",
+      "Condiments: ketchup, mustard, coarse sea salt",
+    ],
+    summary: `A special burger party menu combining fresh ingredients with authentic flavor.`,
+  },
+  {
+    id: 2,
+    image: "./Event-2.jpg",
+    title: "Late Night Lounge Bash",
+    price: 850,
+    content: `A stylish lounge party with premium drinks, gourmet bites, and neon-lit vibes.`,
+    details: [
+      "Premium whiskey, wine, and cocktail selection",
+      "Gourmet sliders and finger foods",
+      "Neon lights, dance floor, and cozy seating areas",
+    ],
+    summary: `Perfect for those who love nightlife—mixing great food, drinks, and a lively bar scene.`,
+  },
+  {
+    id: 3,
+    image: "./Event-3.jpg",
+    title: "Home Bar Celebration",
+    price: 1200,
+    content: `An elegant home bar party featuring premium spirits, mixers, and festive garnishes.`,
+    details: [
+      "Selection of spirits: Luxardo, Chartreuse, Nogino, Highside Gin, Goodness Sisters",
+      "Cocktail tools: shaker, jigger, ice bucket with champagne",
+      "Garnishes: lemon slices, apple slices, cinnamon sticks",
+      "Glassware: red-tinted and gold-rimmed glasses for a stylish presentation",
+    ],
+    summary: `A refined bar experience at home, blending premium drinks, festive décor, and celebratory vibes.`,
+  },
+  {
+    id: 4,
+    image: "./Event-4.jpg",
+    title: "Double Burger Challenge",
+    price: 350,
+    content: `A playful dining event where guests take on the double burger challenge.`,
+    details: [
+      "Extra-large burgers stacked with cheese and fresh toppings",
+      "Friendly competition among guests",
+      "Memorable dining experience with photos and neon vibes",
+    ],
+    summary: `An exciting burger challenge night that combines food, fun, and a lively restaurant atmosphere.`,
+  },
+  {
+    id: 5,
+    image: "./Event-5.jpg",
+    title: "Starry Night Celebration",
+    price: 1200,
+    content: `A cozy nighttime party with drinks, music, and glowing lights under the stars.`,
+    details: [
+      "Guests enjoying casual conversations and dancing",
+      "Rustic outdoor setup with white tablecloth and refreshments",
+      "Lanterns and string lights illuminating the night",
+      "Perfect for holiday or weekend gatherings",
+    ],
+    summary: `An unforgettable evening of camaraderie, music, and glowing lights beneath the night sky.`,
+  },
+];

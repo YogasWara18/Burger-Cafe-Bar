@@ -26,7 +26,15 @@ export default function Specials() {
     setItems(data);
   }, [data]);
 
+  const handleFilterActive = (id: number) => {
+    specialsFilters.map(filter => {
+      filter.active = false;
+      if (filter.id === id) filter.active = true;
+    });
+  };
+
   const handleSpecialChange = (id: number) => {
+    handleFilterActive(id);
     const updatedItems = items.map(
       (item: {
         id: number;

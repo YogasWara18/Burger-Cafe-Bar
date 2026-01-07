@@ -1,0 +1,23 @@
+.events {
+    background: url('../../../public/Event-bg.jpg') center center no-repeat;
+    background: cover;
+    position: relative;
+}
+
+.events::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.events .section-title h2 {
+    color: #fff;
+}
+
+.events .container {
+    position: relative;
+}

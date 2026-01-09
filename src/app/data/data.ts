@@ -723,3 +723,46 @@ export const bookings = [
     },
   },
 ];
+
+export const testimonials = [
+  {
+    id: 1,
+    content:
+      "“Burger Café & Bar is the perfect spot for premium burgers. The patties are juicy, the buns soft, and the toppings fresh, making every bite feel special and satisfying. The cozy bar atmosphere, friendly staff, and attention to detail make the dining experience even better and truly memorable.”",
+    avatar: "./Testimoni-1.jpg",
+    client: "Richard Nelson",
+    position: "CEO",
+  },
+  {
+    id: 2,
+    content:
+      "“I’m impressed by the creativity of the menu at Burger Café & Bar. They don’t just serve classic burgers, but also unique variations with homemade sauces and seasonal ingredients. It’s the ideal place to hang out with friends, enjoy lively conversations, or simply unwind after a long day of work.”",
+    avatar: "./Testimoni-2.jpg",
+    client: "Sophia Martinez",
+    position: "Marketing Director",
+  },
+  {
+    id: 3,
+    content:
+      "“As a food enthusiast, I can say Burger Café & Bar sets a high standard. The portions are generous yet balanced, the flavors carefully crafted, and the staff welcoming and attentive. This place has quickly become my go-to destination for a relaxed dinner with family or a casual evening with close friends.”",
+    avatar: "./Testimoni-3.jpg",
+    client: "Emily Stark",
+    position: "Food Blogger",
+  },
+  {
+    id: 4,
+    content:
+      "“As a chef, I appreciate the attention to detail in every burger. The presentation appealing, and the taste consistently outstanding. Each dish reflects true craftsmanship and passion, making it a delightful experience every time. Highly recommended for anyone who values quality and flavor.”",
+    avatar: "./Testimoni-4.jpg",
+    client: "Edward Stanley",
+    position: "Professional Chef",
+  },
+  {
+    id: 5,
+    content:
+      "“Burger Café & Bar is more than just a restaurant it’s an experience worth sharing. Great food, and a warm atmosphere make me feel at home every visit. The combination of premium ingredients, creative recipes, and welcoming service ensures that every moment spent here is truly enjoyable.”",
+    avatar: "./Testimoni-5.jpg",
+    client: "Jessica Harlev",
+    position: "Entrepreneur",
+  },
+];

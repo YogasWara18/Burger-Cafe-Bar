@@ -1,0 +1,17 @@
+.testimonials .testimonials-swiper-pagination {
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials .testimonials-swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 1;
+}
+
+.testimonials .testimonials-swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #de963a;
+}

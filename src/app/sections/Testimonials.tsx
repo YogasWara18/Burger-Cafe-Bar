@@ -28,8 +28,12 @@ export default function Testimonials() {
         const res = await fetch("http://localhost:3000/api/testimonials");
         const data = await res.json();
         setSlides(data);
-      } catch (e: any) {
-        console.error(e.message);
+      } catch (e: unknown) {
+        if (e instanceof Error) {
+          console.error(e.message);
+        } else {
+          console.error(String(e));
+        }
       }
     };
 
@@ -39,7 +43,6 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="testimonials section-bg">
       <div className="container" data-aos="fade-up">
-
         {/* Logo di atas testimonial */}
         <div
           className="testimonials-logo"

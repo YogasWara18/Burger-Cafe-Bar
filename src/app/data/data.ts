@@ -766,3 +766,10 @@ export const testimonials = [
     position: "Entrepreneur",
   },
 ];
+
+export const gallery = [
+  {
+    id: 1,
+    image: ''
+  }
+]

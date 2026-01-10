@@ -1,5 +1,6 @@
 import About from "./sections/About";
 import Booking from "./sections/Booking";
+import Chefs from "./sections/Chefs";
 import Events from "./sections/Events";
 import Gallery from "./sections/Gallery";
 import Hero from "./sections/Hero";
@@ -20,6 +21,7 @@ export default function Home() {
        <Booking/>
        <Testimonials/>
        <Gallery/>
+       <Chefs/>
     </main>
    
   </>    

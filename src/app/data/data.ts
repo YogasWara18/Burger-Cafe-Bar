@@ -777,3 +777,28 @@ export const gallery = [
   { id: 7, image: '/gallery-7.jpg' },
   { id: 8, image: '/gallery-8.jpg' },
 ];
+
+export const chefs = [
+  {
+    id: 1,
+    name: 'Albert Staren',
+    photo: '/Chef-burger.jpg',
+    position: 'Master Chef',
+    delay: '100'
+  },
+   {
+    id: 2,
+    name: 'Inka Helly',
+    photo: '/Chef-bartender.jpg',
+    position: 'Master Bartender',
+    delay: '200'
+  },
+   {
+    id: 3,
+    name: 'James Stewart',
+    photo: '/Chef-barista.jpg',
+    position: 'Master Barista',
+    delay: '300'
+  },
+
+]

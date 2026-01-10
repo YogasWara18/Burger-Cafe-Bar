@@ -1,26 +1,24 @@
 import React, { useEffect } from 'react';
-import GLightbox from 'glightbox';
+import Glightbox from 'glightbox';
 import 'glightbox/dist/css/glightbox.css'; 
 import './galleryItem.css';
 import Image from 'next/image';
 
-type GalleryItemProps = {
+
+export default function GalleryItem({
+  item,
+}: {
   item: {
     id: number;
     image: string;
   };
-};
+}) {
 
-export default function GalleryItem({ item }: GalleryItemProps) {
-  useEffect(() => {
-    const lightbox = GLightbox({
-      selector: '.gallery-lightbox',
-    });
-
-    return () => {
-      lightbox.destroy(); 
-    };
-  }, []);
+    useEffect(() => {
+      new Glightbox({
+        selector: '.gallery-lightbox',
+      });
+    }, []);
 
   return (
     <div className="col-lg-3 col-md-4">
@@ -31,12 +29,15 @@ export default function GalleryItem({ item }: GalleryItemProps) {
           data-gallery="gallery-item"
         >
           <Image
-            src={item.image}
-            alt={`Gallery image ${item.id}`}
             width={500}
             height={300}
-            className="img-fluid"
-            style={{ width: '100%', height: 'auto' }}
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
+            src={item.image}
+            alt="Gallery"
+            className='img-fluid'
           />
         </a>
       </div>

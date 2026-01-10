@@ -34,9 +34,9 @@ export default function Gallery() {
           {!images ? (
             <Preloader/>
           ) : images.length > 0 ? (
-            images.map((image: {id: number; image: string }) => {
+            images.map((image: { id: number; image: string }) => (
               <GalleryItem key={image.id} item={image}/>
-            })
+            ))
           ) : (
             <Preloader/>
           )}

@@ -10,7 +10,7 @@ export default function SpecialsItem({
     title: string;
     subtitle: string;
     content: string;
-    active: string;
+    active: boolean;
   };
 }) {
   return (

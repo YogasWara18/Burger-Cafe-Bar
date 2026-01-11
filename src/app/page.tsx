@@ -1,6 +1,6 @@
 "use client";
 
-import dynamic from "next/dynamic";
+import nextDynamic from "next/dynamic";
 
 // Import komponen biasa
 import About from "./sections/About";
@@ -12,11 +12,14 @@ import Footermain from "./sections/Footermain";
 import Gallery from "./sections/Gallery";
 import Menu from "./sections/Menu";
 import Specials from "./sections/Specials";
-import Testimonials from "./sections/Testimonials";
 
 // Dynamic import untuk komponen yang bermasalah di SSR
-const Hero = dynamic(() => import("./sections/Hero"), { ssr: false });
-const Events = dynamic(() => import("./sections/Events"), { ssr: false });
+const Hero = nextDynamic(() => import("./sections/Hero"), { ssr: false });
+const Events = nextDynamic(() => import("./sections/Events"), { ssr: false });
+const Testimonials = nextDynamic(() => import("./sections/Testimonials"), { ssr: false });
+
+export const dynamic = "force-dynamic"; // ini sekarang tidak konflik
+
 
 export default function Home() {
   return (

@@ -1,12 +1,10 @@
-
-
 import Breadcrumb from "@/app/components/Breadcrumb";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 async function getFoodData(id: string) {
-  const res = await fetch(`/api/menu/${id}`);
+  const res = await fetch(`http://localhost:3000/api/menu/${id}`);
   return res.json();
 }
 
@@ -60,10 +58,11 @@ export default async function MenuSingle({
                 </div>
               )}
               <div className="mt-4">
-                <Link href="/#menu" className="app-btn">
+                <Link href="/#menu" className="app-btn ">
                   Order Now
                 </Link>
               </div>
+
             </div>
           </div>
         </div>

@@ -7,21 +7,21 @@ export default function TopBar() {
   const [scroll, setScroll] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
+    window.addEventListener("scroll", () => {
       setScroll(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
+    });
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", () => {
+        setScroll(window.scrollY);
+      });
     };
-  }, []); // ✅ selalu kosong, tidak berubah ukuran
+  }, [scroll]);
 
   return (
     <div
       id="topbar"
       className={`d-flex align-items-center fixed-top ${
-        scroll > 100 ? "topbar-scrolled" : ""
+        scroll > 100 ? "topbar-scrolled" : undefined
       }`}
     >
       <div className="container d-flex justify-content-center justify-content-md-between">

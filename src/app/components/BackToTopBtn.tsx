@@ -1,32 +1,36 @@
-'use client'
+"use client";
 
-import React, {useState, useEffect} from 'react';
-import './backToTopBtn.css';
+import React, { useState, useEffect } from "react";
+import "./backToTopBtn.css";
 
 export default function BackToTopBtn() {
   const [scroll, setScroll] = useState(0);
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    const handleScroll = () => {
       setScroll(window.scrollY);
-    });
-    return () => {
-      window.removeEventListener('scroll', () => {
-        setScroll(window.scrollY);
-      });
     };
-  }, [scroll]);
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); 
 
   const backToTop = () => {
-    window.scrollTo(0, 0);
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   };
 
   return (
-    <a 
-    onClick={backToTop}
-    className={`back-to-top d-flex align-items-center justify-content-center ${scroll > 100 ? 'active' : undefined }`}
+    <a
+      onClick={backToTop}
+      className={`back-to-top d-flex align-items-center justify-content-center ${
+        scroll > 100 ? "active" : ""
+      }`}
     >
       <i className="bi bi-arrow-up-short"></i>
     </a>
-  )
+  );
 }

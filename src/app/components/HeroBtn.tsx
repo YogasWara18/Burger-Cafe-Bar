@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import "./heroBtn.css";
@@ -11,6 +11,9 @@ export default function HeroBtn({
   target: string;
 }) {
   const handleScrollTo = (section: string) => {
+    
+    if (typeof window === "undefined" || typeof document === "undefined") return;
+
     const header = document.querySelector<HTMLElement>("#header");
     const targetEl = document.querySelector<HTMLElement>(`#${section}`);
 

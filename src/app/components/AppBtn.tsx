@@ -1,11 +1,13 @@
-'use client'
+"use client";
 
-import React from 'react';
-import './appBtn.css';
+import React from "react";
+import "./appBtn.css";
 
 export default function AppBtn({ name }: { name: string }) {
   const handleScrollTo = (section: string) => {
-    const header = document.querySelector<HTMLElement>('#header');
+    if (typeof window === "undefined" || typeof document === "undefined") return;
+
+    const header = document.querySelector<HTMLElement>("#header");
     const targetEl = document.querySelector<HTMLElement>(`#${section}`);
 
     if (!targetEl) return;
@@ -15,14 +17,14 @@ export default function AppBtn({ name }: { name: string }) {
 
     window.scrollTo({
       top: elementPosition - offset,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   return (
     <a
       className="app-btn scrollto d-none d-lg-flex"
-      onClick={() => handleScrollTo('book-a-table')}
+      onClick={() => handleScrollTo("book-a-table")}
     >
       {name}
     </a>

@@ -13,15 +13,19 @@ export default function Nav() {
   const [scroll, setScroll] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
+  const handleScroll = () => {
+    if (typeof window !== "undefined") {
       setScroll(window.scrollY);
-    };
+    }
+  };
 
+  if (typeof window !== "undefined") {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []); 
+  }
+}, []);
 
   const handleToggleMenu = () => {
     setOpen(!open);

@@ -8,7 +8,8 @@ export default function Hero() {
   useEffect(() => {
     const loadLightbox = async () => {
       if (typeof window !== "undefined") {
-        const Glightbox = (await import("glightbox")).default;
+        const glightboxModule = await import("glightbox");
+        const Glightbox = glightboxModule.default;
         Glightbox({ selector: ".glightbox" });
       }
     };

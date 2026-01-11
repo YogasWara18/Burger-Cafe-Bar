@@ -92,7 +92,7 @@ export default function Contact() {
                 <textarea
                   className="form-control"
                   name="message"
-                  rows="5"
+                  rows={5}
                   placeholder="Your Message"
                   required
                 ></textarea>

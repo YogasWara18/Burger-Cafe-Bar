@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Glightbox from 'glightbox';
+import GLightbox from 'glightbox';
 import 'glightbox/dist/css/glightbox.css'; 
 import './galleryItem.css';
 import Image from 'next/image';
@@ -15,7 +15,7 @@ export default function GalleryItem({
 }) {
 
     useEffect(() => {
-      new Glightbox({
+      new GLightbox({
         selector: '.gallery-lightbox',
       });
     }, []);

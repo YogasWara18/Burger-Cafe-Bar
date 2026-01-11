@@ -10,7 +10,6 @@ import "./testimonials.css";
 import SectionTitle from "../components/SectionTitle";
 import TestimonialsItem from "../components/TestimonialsItem";
 
-// Define a type for your testimonials
 type Testimonial = {
   id: number;
   content: string;
@@ -29,27 +28,21 @@ export default function Testimonials() {
         const data = await res.json();
         setSlides(data);
       } catch (e: unknown) {
-        if (e instanceof Error) {
-          console.error(e.message);
-        } else {
-          console.error(String(e));
-        }
+        console.error(e instanceof Error ? e.message : String(e));
       }
     };
-
     fetchData();
   }, []);
 
   return (
     <section id="testimonials" className="testimonials section-bg">
       <div className="container" data-aos="fade-up">
-        {/* Logo di atas testimonial */}
         <div
           className="testimonials-logo"
           style={{ textAlign: "center", marginBottom: "20px" }}
         >
           <img
-            src="/navbar-logo.png" // ganti dengan path logo kamu
+            src="/navbar-logo.png"
             alt="Burger Café & Bar Logo"
             style={{ width: "110px", height: "auto" }}
           />
@@ -76,14 +69,8 @@ export default function Testimonials() {
             modules={[Autoplay, Pagination]}
             loop={true}
             breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-              1200: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
+              320: { slidesPerView: 1, spaceBetween: 20 },
+              1200: { slidesPerView: 3, spaceBetween: 20 },
             }}
             className="testimonials-slider"
           >

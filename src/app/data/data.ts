@@ -29,18 +29,19 @@ export const navs = [
     target: "events",
     active: false,
   },
+   {
+    id: 7,
+    name: "Gallery",
+    target: "gallery",
+    active: false,
+  },
   {
     id: 6,
     name: "Chef",
     target: "chefs",
     active: false,
   },
-  {
-    id: 7,
-    name: "Gallery",
-    target: "target",
-    active: false,
-  },
+ 
   {
     id: 8,
     name: "Contact",

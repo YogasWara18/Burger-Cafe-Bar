@@ -58,11 +58,10 @@ export default async function MenuSingle({
                 </div>
               )}
               <div className="mt-4">
-                <Link href={`/order/${id}`} className="app-btn ">
+                <Link href="/#book-a-table" className="app-btn">
                   Order Now
                 </Link>
               </div>
-
             </div>
           </div>
         </div>

@@ -26,7 +26,7 @@ export default function Home() {
         <Chefs />
         <Contact />
         <Footer />
-        <Footermain />
+        <Footermain/>
       </main>
     </>
   );

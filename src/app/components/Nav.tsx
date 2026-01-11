@@ -1,3 +1,5 @@
+'use client'
+
 import React, {useState, useEffect} from 'react'
 import { navs } from '../data/data';
 import './nav.css';

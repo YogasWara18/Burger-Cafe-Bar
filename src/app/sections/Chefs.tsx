@@ -16,7 +16,7 @@ export default function Chefs() {
   const [items, setItems] = useState<Chef[]>([]);
 
   useEffect(() => {
-    fetch("/api/chefs") // ✅ relative path aman di client
+    fetch("/api/chefs") 
       .then((res) => res.json())
       .then((data: Chef[]) => setItems(data))
       .catch((err) => console.error("Failed to fetch chefs:", err));

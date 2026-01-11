@@ -1,11 +1,11 @@
 "use client";
 
-import dynamic from "next/dynamic";
+import nextDynamic from "next/dynamic";
 
-// Dynamic import untuk komponen bermasalah
-const Hero = dynamic(() => import("./sections/Hero"), { ssr: false });
-const Events = dynamic(() => import("./sections/Events"), { ssr: false });
-const Testimonials = dynamic(() => import("./sections/Testimonials"), { ssr: false });
+// Komponen yang bermasalah di SSR → pakai dynamic
+const Hero = nextDynamic(() => import("./sections/Hero"), { ssr: false });
+const Events = nextDynamic(() => import("./sections/Events"), { ssr: false });
+const Testimonials = nextDynamic(() => import("./sections/Testimonials"), { ssr: false });
 
 // Komponen lain bisa import biasa
 import About from "./sections/About";
@@ -17,6 +17,9 @@ import Chefs from "./sections/Chefs";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Footermain from "./sections/Footermain";
+
+// Tambahkan ini untuk memaksa halaman tidak di‑SSG/SSR
+export const dynamic = "force-dynamic";
 
 export default function Home() {
   return (

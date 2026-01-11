@@ -1,0 +1,140 @@
+.contact .info {
+  width: 100%;
+}
+
+.contact .info i {
+  font-size: 20px;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #de963a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.contact .info h4 {
+  margin-left: 60px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+.contact .info p {
+  margin-left: 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #bab3a6;
+}
+
+.contact .info .open-hours,
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 30px;
+}
+
+.contact .contact-form {
+  width: 100%;
+}
+
+.contact .contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: none;
+  font-size: 14px;
+  background: #0c0b09;
+  border: 1px solid #625b4b;
+  color: #fff;
+  padding: 10px 12px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact .contact-form input::placeholder,
+.contact .contact-form textarea::placeholder {
+  color: #a49b89;
+}
+
+.contact .contact-form input:focus,
+.contact .contact-form textarea:focus {
+  border-color: #de963a;
+  box-shadow: 0 0 6px rgba(222,150,58,0.5);
+  outline: none;
+}
+
+.contact .contact-form input {
+  height: 44px;
+}
+
+.contact .contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact .contact-form button[type='submit'] {
+  background: #de963a;
+  border: 0;
+  padding: 12px 40px;
+  color: #fff;
+  transition: background 0.3s ease, transform 0.2s ease;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.contact .contact-form button[type='submit']:hover {
+  background: #c97f2f;
+  transform: translateY(-2px);
+}
+
+.contact .contact-form .error-message,
+.contact .contact-form .sent-message,
+.contact .contact-form .loading {
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.contact .contact-form .error-message {
+  color: #fff;
+  background: #ed3c0d;
+}
+
+.contact .contact-form .sent-message {
+  color: #fff;
+  background: #de963a;
+}
+
+.contact .contact-form .loading {
+  color: #fff;
+}
+
+.contact .contact-form .loading:before {
+  content: '';
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #de963a;
+  border-top-color: #1a1814;
+  animation: animate-loading 1s linear infinite;
+}
+
+@keyframes animate-loading {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

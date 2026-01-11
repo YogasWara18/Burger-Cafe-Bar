@@ -25,7 +25,7 @@ export default function Testimonials() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/testimonials");
+        const res = await fetch("/api/testimonials");
         const data = await res.json();
         setSlides(data);
       } catch (e: unknown) {

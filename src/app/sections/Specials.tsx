@@ -22,7 +22,7 @@ export default function Specials() {
   const [items, setItems] = useState<SpecialItem[]>([]);
 
   const getSpecialsData = () => {
-    fetch("http://localhost:3000/api/specials")
+    fetch("/api/specials")
       .then((res) => res.json())
       .then((data: SpecialItem[]) => setData(data))
       .catch((e) => console.log(e.message));

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 async function getFoodData(id: string) {
-  const res = await fetch(`http://localhost:3000/api/menu/${id}`);
+  const res = await fetch(`/api/menu/${id}`);
   return res.json();
 }
 

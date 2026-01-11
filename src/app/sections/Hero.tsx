@@ -1,17 +1,18 @@
 "use client";
 
 import React, { useEffect } from "react";
-import Glightbox from "glightbox";
 import "./hero.css";
 import HeroBtn from "../components/HeroBtn";
 
-
-
 export default function Hero() {
   useEffect(() => {
-    Glightbox({
-      selector: ".glightbox",
-    });
+    const loadLightbox = async () => {
+      if (typeof window !== "undefined") {
+        const Glightbox = (await import("glightbox")).default;
+        Glightbox({ selector: ".glightbox" });
+      }
+    };
+    loadLightbox();
   }, []);
 
   return (
